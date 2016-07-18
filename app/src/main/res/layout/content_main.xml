@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Xml ripple"
-            android:textSize="30sp"
+            android:textSize="20sp"
             />
 
     </LinearLayout>
@@ -44,13 +44,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Code ripple"
-            android:textSize="30sp"
+            android:textSize="20sp"
             />
 
     </LinearLayout>
 
     <com.balysv.materialripple.MaterialRippleLayout
-        android:id="@+id/external_ripple"
+        android:id="@+id/material_ripple_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/second_layout"
@@ -67,10 +67,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Material ripple layout"
-            android:textSize="30sp"
+            android:textSize="20sp"
             />
 
     </com.balysv.materialripple.MaterialRippleLayout>
-
 
 </RelativeLayout>
