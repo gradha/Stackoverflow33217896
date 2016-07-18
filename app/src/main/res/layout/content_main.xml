@@ -20,4 +20,32 @@
         android:text="Hello World!"
         />
 
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hello_text"
+        android:layout_margin="20dp"
+        android:background="@drawable/selection_ripple"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Touch for a ripple"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second line of text"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+
 </RelativeLayout>
