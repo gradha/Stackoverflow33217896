@@ -5,27 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.gradha.stackoverflow33217896.MainActivity"
     tools:showIn="@layout/activity_main">
-
-    <TextView
-        android:id="@+id/hello_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
 
     <LinearLayout
         android:id="@+id/first_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/hello_text"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:background="@drawable/selection_ripple"
         android:clickable="true"
         android:orientation="vertical"
@@ -35,14 +23,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Touch for a ripple"
-            android:textSize="30sp"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Second line of text"
+            android:text="Xml ripple"
             android:textSize="30sp"
             />
 
@@ -53,7 +34,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/first_layout"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:clickable="true"
         android:orientation="vertical"
         android:padding="20dp"
@@ -66,13 +47,30 @@
             android:textSize="30sp"
             />
 
+    </LinearLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/external_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/second_layout"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:padding="20dp"
+        app:mrl_rippleAlpha="1"
+        app:mrl_rippleColor="@color/red"
+        app:mrl_rippleHover="true"
+        app:mrl_rippleOverlay="false"
+        >
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Created manually"
+            android:text="Material ripple layout"
             android:textSize="30sp"
             />
 
-    </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
 
 </RelativeLayout>
